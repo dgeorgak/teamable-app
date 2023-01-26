@@ -11,8 +11,6 @@ function handleEditProfile() {
     var inputInterests = document.getElementById("input-interests")
     inputInterests.value = interests
 
-    new Datepicker('#birthday')
-
     document.getElementById("edit-view").style.display = "block"
     document.getElementById("display-view").style.display = "none"
 }
@@ -24,11 +22,6 @@ function handleUpdateProfile() {
 
     var updatedEmail = document.getElementById("input-email").value
     var email = document.getElementById("email")
-    if (validator.isEmail(updatedEmail)) {
-        email.textContent = updatedEmail
-    } else {
-        alert("wrong email format")
-    }
 
     var updatedInterests = document.getElementById("input-interests").value
     var interests = document.getElementById("interests")
